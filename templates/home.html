@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Salam Center</title>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-black-600 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Dropdown -->
+            <div class="relative group">
+                <button class="text-black px-4 py-2 rounded-md focus:outline-none">
+                    Services ▼
+                </button>
+                <div class="absolute left-0 hidden w-48 bg-white border rounded-md shadow-md group-hover:block">
+                    <a href="{% url 'marriage' %}" class="block px-4 py-2 text-gray-700 hover:bg-green-200">Marriage</a>
+                    <a href="{% url 'funeral-burial' %}"
+                        class="block px-4 py-2 text-gray-700 hover:bg-green-200">Funeral & Burial</a>
+                    <a href="{% url 'convert_group' %}" class="block px-4 py-2 text-gray-700 hover:bg-green-200">Convert
+                        Group</a>
+                    <a href="{% url 'interfaith' %}"
+                        class="block px-4 py-2 text-gray-700 hover:bg-green-200">Interfaith</a>
+                    <a href="{% url 'financial_assistance' %}"
+                        class="block px-4 py-2 text-gray-700 hover:bg-green-200">Financial Assistance</a>
+                    <a href="{% url 'community_relief' %}"
+                        class="block px-4 py-2 text-gray-700 hover:bg-green-200">Community Relief</a>
+                    <a href="{% url 'zakat' %}" class="block px-4 py-2 text-gray-700 hover:bg-green-200">Zakat</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto my-8">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+
+</html>

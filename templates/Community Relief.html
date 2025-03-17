@@ -1,0 +1,100 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Funeral-Burial</title>
+</head>
+
+<body class="bg-gray-100">
+    {% include 'home.html' %}
+    <div class="bg-green-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Community Relief</h1>
+    </div>
+
+    <div class="container mx-auto px-6 py-10">
+        <!-- First Row of Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+                <img src="{% static 'Al-Misbaah.png' %}" class="card-img-top w-full h-72 object-cover" alt="Al-Misbaah">
+                <div class="card-body p-6">
+                    <h5 class="card-title text-xl font-bold mb-3">Al-Misbaah</h5>
+                    <p class="card-text text-gray-700 text-sm mb-6">AL-Misbaah is a nonprofit providing charitable aid, refugee assistance to family in need, community education, as well as youth activities.</p>
+                    <a href="https://al-misbaah.org/" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 mt-4">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+                <img src="{% static 'MAS-SSF.jpg' %}" class="card-img-top w-full h-72 object-cover" alt="MAS-SSF">
+                <div class="card-body p-6">
+                    <h5 class="card-title text-xl font-bold mb-3">Muslim American Society Social Services Foundation</h5>
+                    <p class="card-text text-gray-700 text-sm mb-6">MAS-SSF is a non-profit that aims to aid families at large and the Muslim community in particular with their social services needs.</p>
+                    <a href="https://mas-ssf.org/" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 mt-4">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+                <img src="{% static 'Reda.png' %}" class="card-img-top w-full h-72 object-cover" alt="REDA">
+                <div class="card-body p-6">
+                    <h5 class="card-title text-xl font-bold mb-3">Refugee Enrichment & Development Association</h5>
+                    <p class="card-text text-gray-700 text-sm mb-6">REDA is a culturally sensitive services center that provides refugee families with crucial support for their day-to-day needs through volunteers and community resources.</p>
+                    <a href="https://mas-ssf.org/" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 mt-4">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <!-- Card 4 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+                <img src="{% static 'ARFB.png' %}" class="card-img-top w-full h-72 object-cover" alt="Ar-Razzaq Food Bank">
+                <div class="card-body p-6">
+                    <h5 class="card-title text-xl font-bold mb-3">Ar-Razzaq Food Bank</h5>
+                    <p class="card-text text-gray-700 text-sm mb-6">Ar-Razzaq Food Bank is a community-based organization that provides assistance to the needy in such a way to minimize hunger and promote self-reliance.</p>
+                    <a href="https://www.ar-razzaqfoodbank.org/" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 mt-4">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+                <img src="{% static 'ICNA-Relief.png' %}" class="card-img-top w-full h-72 object-cover" alt="ICNA Relief">
+                <div class="card-body p-6">
+                    <h5 class="card-title text-xl font-bold mb-3">ICNA Relief</h5>
+                    <p class="card-text text-gray-700 text-sm mb-6">ICNA Relief USA seeks to alleviate human suffering by providing caring and compassionate service to victims of adversities and survivors of disasters.</p>
+                    <a href="https://icnarelief.org/" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 mt-4">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+                <img src="{% static 'Shifa-Clinic.png' %}" class="card-img-top w-full h-72 object-cover" alt="Shifa Clinic">
+                <div class="card-body p-6">
+                    <h5 class="card-title text-xl font-bold mb-3">Shifa Clinic</h5>
+                    <p class="card-text text-gray-700 text-sm mb-6">Shifa Clinic is a non-profit, student-run medical facility dedicated to serving the diverse, medically uninsured population of the Greater Sacramento Area.</p>
+                    <a href="https://shifaclinic.org/" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 mt-4">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+</body>
+
+</html>

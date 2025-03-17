@@ -1,0 +1,49 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Funeral-Burial</title>
+</head>
+
+<body class="bg-gray-100">
+    {% include 'home.html' %}
+    <div class="bg-green-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Funeral & Burial</h1>
+    </div>
+    <div class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="{% static 'Funeral.jpg' %}" alt="Funeral" class="w-full h-auto max-w-md mx-auto">
+                <h1 class="text-4xl font-bold mt-4">Funeral</h1>
+                <p>SALAM can facilitate memorial services as well as the Janazza prayer.</p>
+            
+                <button class="mt-8">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"
+                       class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-green-700 transition">
+                        Contact Us
+                        <span>→</span>
+                    </a>
+                </button>
+            </div>
+            <div>
+                <img src="{% static 'Burial.jpg' %}" alt="Burial" class="w-full h-auto max-w-md mx-auto">
+                <h1 class="text-4xl font-bold mt-4">Burial</h1>
+                <p>For burial services please contact Sacramento Muslim Cemetery.</p>
+                <button class="mt-8">
+                    <a href="https://smcemetery.com/" target="_blank"
+                       class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-green-700 transition">
+                        Smcemento Muslim Cemetery
+                        <span>→</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+</body>
+
+</html>

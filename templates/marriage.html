@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Marriage Services</title>
+</head>
+<body class="bg-gray-100">
+    {% include 'home.html' %}
+    <div class="bg-green-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Marriage Services</h1>
+    </div>
+    <div class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <video controls class="rounded-lg shadow-lg w-full h-[500px]">
+                    <source src="{% static 'Marriage-Nikah-at-SALAM.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <p class="text-center mt-2">Video Credit | JQ Events - Luxury Event Design & Management</p>
+            </div>
+
+            <!-- Text -->
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Islamic Marriage | Nikah</h2>
+                <p class="text-gray-800 text-right text-xl mb-4">
+                    مِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ
+                    بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Marriage, or Nikah, is a sacred and cherished bond in Islam, symbolizing love, commitment, and
+                    mutual respect. At SALAM Islamic Center, we are dedicated to helping our community members embark on
+                    this significant journey with ease and blessed beginnings.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Our Imams are here to facilitate your Nikah, an Islamic Marriage, ceremony at the Masjid according
+                    to the Islamic practice of marriage principles.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Our team assists with the necessary documentation required for your Nikah, including the Islamic
+                    marriage certificate and the legal requirements for marriage in California.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Community Center Booking for Wedding: Our Community Center is an ideal venue for wedding receptions and
+                    celebrations, offering a versatile space that can be customized to fit your vision. With ample space
+                    and modern amenities, it’s perfect for hosting your family and friends in a joyful and festive environment.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Arrange your Nikah Ceremony at SALAM –<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="text-blue-500">
+                        Send us an email
+                    </a>.
+                </p>
+
+                <button>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"
+                        class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-green-700 transition">
+                        Nikah Request
+                        <span>→</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="{% static 'IMG_4728.jpg' %}" class="w-full h-72 object-cover rounded-lg shadow-lg cursor-pointer" alt="Image 1" onclick="openModal(this.src)">
+            </div>
+
+            <div>
+                <img src="{% static 'IMG_4729.jpg' %}" class="w-full h-72 object-cover rounded-lg shadow-lg cursor-pointer" alt="Image 2" onclick="openModal(this.src)">
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+
+</body>
+
+</html>

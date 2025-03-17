@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Funeral-Burial</title>
+</head>
+
+<body class="bg-gray-100">
+    {% include 'home.html' %}
+
+    <div class="bg-green-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Interfaith</h1>
+    </div>
+
+    <div class="container mx-auto px-6 py-10">
+        <h1 class="text-3xl text-center font-extrabold text-gray-900 mb-6">Building Bridges With All Faiths</h1>
+
+        <div class="p-6 bg-gray-100 rounded-lg">
+            <p class="text-gray-700 mb-4">
+                SALAM believes strongly in fostering mutual understanding and respect across all faith traditions within our community. 
+                SALAM has a long history of being an open and welcoming religious institution with a proud tradition of reaching out to communities of all faith backgrounds.
+            </p>
+            <p class="text-gray-700">
+                For more information about SALAM and our interfaith programs, please <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="text-blue-500">
+                    contact us
+                </a>.
+            </p>
+        </div>
+        <div class="text-black text-center py-10 mt-36 ">
+            <h1 class="text-4xl font-bold">Interfaith Iftar – Ramadan 2022</h1>
+        </div>
+        <!--slide-->
+        <div class="swiffy-slider slider-item-reveal slider-nav-round slider-item-ratio slider-item-ratio-21x9" id="slider1">
+            <ul class="slider-container">
+                <li><img src="{% static 'SALAM-Interfaith-Iftar-Ramadan-2022-3.jpg' %}" loading="lazy" alt="..."></li>
+                <li><img src="{% static 'SALAM-Interfaith-Iftar-Ramadan-2022-4.jpg' %}" loading="lazy" alt="..."></li>
+                <li><img src="{% static 'SALAM-Interfaith-Iftar-Ramadan-2022-5.jpg' %}" loading="lazy" alt="..."></li>
+                <li><img src="{% static 'SALAM-Interfaith-Iftar-Ramadan-2022-6.jpg' %}" loading="lazy" alt="..."></li>
+                <li><img src="{% static 'SALAM-Interfaith-Iftar-Ramadan-2022-7.jpg' %}" loading="lazy" alt="..."></li>
+                <li><img src="{% static 'SALAM-Interfaith-Iftar-Ramadan-2022-9.jpg' %}" loading="lazy" alt="..."></li>
+            </ul>
+            <div class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 px-4 py-2 text-sm font-semibold">
+                Photo credit | Sulaiman Isaqzoy
+            </div>
+        
+            <button type="button" class="slider-nav" aria-label="Go left"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+        
+            <div class="slider-indicators slider-indicators-square d-none d-md-flex">
+                <button class="" aria-label="Go to slide"></button>
+                <button aria-label="Go to slide" class=""></button>
+                <button aria-label="Go to slide" class="active"></button>
+                <button aria-label="Go to slide"></button>
+            </div>
+        
+            <div class="slider-indicators slider-indicators-sm slider-indicators-dark slider-indicators-round d-md-none slider-indicators-highlight">
+                <button class="" aria-label="Go to slide"></button>
+                <button aria-label="Go to slide" class=""></button>
+                <button aria-label="Go to slide" class="active"></button>
+                <button aria-label="Go to slide"></button>
+            </div>
+        </div>
+        <!--second slide-->
+        <div class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein slider-item-first-visible mt-40">
+            <ul class="slider-container py-4">
+                <li class="slide-visible">
+                    <div class="card shadow h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="{% static 'Interfaith-2-1.jpg' %}" class="card-img-top" loading="lazy" alt="...">
+                        </div>
+                    </div>
+                </li>
+                <li class="slide-visible">
+                    <div class="card shadow h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="{% static 'Interfaith-4-1.jpg' %}" class="card-img-top" loading="lazy" alt="...">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card shadow h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="{% static 'Interfaith-3-1.jpg' %}" class="card-img-top" loading="lazy" alt="...">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card shadow h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="{% static 'Interfaith-5-1.jpg' %}" class="card-img-top" loading="lazy" alt="...">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card shadow h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="{% static 'Interfaith-6-1.jpg' %}" class="card-img-top" loading="lazy" alt="...">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card shadow h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="{% static 'Interfaith-7.jpg' %}" class="card-img-top" loading="lazy" alt="...">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        
+            <button type="button" class="slider-nav" aria-label="Go left"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+        
+            <div class="slider-indicators">
+                <button class="active" aria-label="Go to slide"></button>
+                <button aria-label="Go to slide"></button>
+                <button aria-label="Go to slide"></button>
+                <button aria-label="Go to slide"></button>
+                <button aria-label="Go to slide"></button>
+            </div>
+            <div class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 px-4 py-2 text-sm font-semibold">
+                Photo credit | “Rashid bin Quadir Thomas at CapturedLight Productions.”
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+</body>
+</html>

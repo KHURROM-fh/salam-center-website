@@ -1,0 +1,114 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Funeral-Burial</title>
+</head>
+
+<body class="bg-gray-100">
+    {% include 'home.html' %}
+    <div class="bg-green-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Care 4 Converts</h1>
+    </div>
+    <div class="container mx-auto px-6 py-10">
+        <div class="flex flex-col md:flex-row bg-white p-6 md:p-12">
+            <div class="bg-green-600 text-white p-6 md:p-12 rounded-lg md:w-1/2">
+                <p class="text-sm uppercase">Meeting</p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Every 2nd Saturday of the month <br />
+                    <span class="text-xl md:text-2xl">| 11:00 am - 1:15 pm</span>
+                </h2>
+                <p class="mt-4 text-sm">
+                    If interested, please get in touch with Br. Rashid at
+                    <br />
+                    <span class="font-semibold">care4converts@salamcenter.org</span>
+                </p>
+                <div class="mt-4 space-y-2">
+                    <a href="mailto:care4converts@salamcenter.org" class="flex items-center space-x-2 text-white hover:underline">
+                        <span>Send an email</span>
+                        <span>→</span>
+                    </a>
+                    <a href="https://www.facebook.com/care4converts/" class="flex items-center space-x-2 text-white hover:underline">
+                        <span>Follow on Facebook</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="p-6 md:p-12 md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-900">Welcome to Islam</h2>
+                <p class="mt-4 text-gray-700">
+                    As a new convert to Islam, it is important to take the time to learn about and understand the teachings and practices of Islam. We are here to help you on your journey.
+                </p>
+                <p class="mt-4 text-gray-700">
+                    As you learn and grow in your faith, it is important to seek guidance and support from the Muslim community. You can find support and guidance through Islamic centers, like SALAM, and through Muslim friends and family members.
+                </p>
+                <p class="mt-4 text-gray-700">
+                    May Allah guide you on your journey and help you grow in your understanding and practice of Islam.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Part -->
+    <div class="container mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <img src="{% static 'Care4Converts.jpg' %}" alt="Community Gathering" class="rounded-lg shadow-lg w-full">
+            </div>
+    
+            <!-- Important Documents -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Important Documents</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="text-gray-700">Guide for New Muslims</span>
+                        <a href="{% static 'Prayer-Guide.pdf' %}" download class="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300">Download</a>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="text-gray-700">The Testimony of Faith</span>
+                        <a href="{% static 'Prayer-Guide.pdf' %}" download class="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300">Download</a>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="text-gray-700">Prayer Guide</span>
+                        <a href="{% static 'Prayer-Guide.pdf' %}" download class="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300">Download</a>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="text-gray-700">Purification</span>
+                        <a href="{% static 'Prayer-Guide.pdf' %}" download class="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300">Download</a>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="text-gray-700">Prophet Muhammad PBUH</span>
+                        <a href="{% static 'Prayer-Guide.pdf' %}" download class="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300">Download</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <!-- Upcoming Events -->
+        <div class="mt-12">
+            <h2 class="text-2xl font-bold mb-4">Upcoming Events</h2>
+            <div class="bg-white shadow-lg rounded-lg p-4 flex items-center">
+                <div class="bg-green-600 text-white px-4 py-2 rounded-lg text-center">
+                    <span class="block text-lg font-bold">19</span>
+                    <span class="block text-sm uppercase">Mar</span>
+                </div>
+
+                <div class="ml-4">
+                    <p class="font-semibold text-green-700">CARE4CONVERTS IFTAR <span class="text-xs bg-black text-white px-2 py-1 rounded-full">WEEKLY</span></p>
+                    <p class="text-sm text-gray-600">Wednesday, SALAM Community Center</p>
+                </div>
+
+                <a href="https://salamcenter.org/events/care4converts-iftar-25/" target="_blank" class="ml-auto bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 text-sm">EVENT DETAIL</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+</body>
+
+</html>

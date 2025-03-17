@@ -1,0 +1,73 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Scholarship</title>
+</head>
+
+<body class="bg-gray-100">
+    {% include 'home.html' %}
+    <div class="bg-green-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Financial Assistance</h1>
+    </div>
+    <div class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+            <div class="w-full h-64 md:h-auto md:col-span-1">
+                <img src="{% static 'Scholorships.jpg' %}" alt="Scholarship Photo" class="w-full h-full object-contain rounded-lg">
+            </div>            
+
+            <div class="bg-white p-8 rounded-lg shadow-md md:col-span-4">
+                <h1 class="text-2xl font-bold text-gray-800 mb-6">Scholarship</h1>
+                <p class="text-gray-600 mb-4">
+                    SALAM’s Education Scholarship Committee is offering financial scholarships that will be given during the Fall Banquet. The scholarship amount is between <span class="font-semibold">$1,000 to $1,500</span>.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Scholarships are available to Muslim students who are enrolled in colleges and universities and meet all the requirements.
+                </p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                    Contact Us →
+                </a>
+            </div>
+        </div>
+        <!--Zakat-->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center mt-16">
+            <div class="w-full h-64 md:h-auto md:col-span-1">
+                <img src="{% static 'Zakat-SALAM-Islamic-Center.jpg' %}" alt="Scholarship Photo" class="w-full h-full object-contain rounded-lg">
+            </div>            
+
+            <div class="bg-white p-8 rounded-lg shadow-md md:col-span-4">
+                <h1 class="text-2xl font-bold text-gray-800 mb-6">Zakat</h1>
+                <p class="text-gray-600 mb-4">
+                    Zakat money can only be given to those who meet certain criteria, as outlined in Islamic teachings.                </p>
+                <p class="text-gray-600 mb-6">
+                    To apply for Zakat at SALAM, you must complete and submit to the SALAM office the Zakat application obtained from the office, with all supporting documents. If an application is submitted without the required documents, it is considered incomplete and will be rejected.                </p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                    Learn More →
+                </a>
+            </div>
+        </div>
+        <!--Tuition Assistance-->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center mt-16">
+            <div class="w-full h-64 md:h-auto md:col-span-1">
+                <img src="{% static 'Tuition.jpg' %}" alt="Scholarship Photo" class="w-full h-full object-contain rounded-lg">
+            </div>            
+
+            <div class="bg-white p-8 rounded-lg shadow-md md:col-span-4">
+                <h1 class="text-2xl font-bold text-gray-800 mb-6">Tuition Assistance
+                </h1>
+                <p class="text-gray-600 mb-6">
+                    If SALAM Weekend School’s Tuition payment presents a hardship for you, we urge you to speak to a school administrator for payment arrangements.                </p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                    Contact Us →
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+</body>
+
+</html>
